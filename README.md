@@ -6,7 +6,7 @@ There are two guards and two doors. One door leads to freedom, and the other to 
 We must ask a question that will result in an answer which is conclusive regardless of the configuration, i.e. if we are asking the liar or the truth teller and if they are guarding the door that leads to freedom or the other door. The solution is to point to any door and ask the guard in front of it: “What will the other guard say if I ask him whether he will use this door?” This question will produce a conclusive answer in all configurations. If you always do the opposite of what the answer says (use the other door) you will always find freedom.
 
 There are four possible configurations, and the answer we get (or it's opposite) must lead to freedom in all cases:
-<ol><li>Ask the truth teller that guards the right door<li>
+<ol><li>Ask the truth teller that guards the right door</li>
 <li>Ask the liar that guards the right door</li>
 <li>Ask the truth teller that guards the wrong door</li>
 <li>Ask the liar that guards the wrong door</li>

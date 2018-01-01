@@ -7,8 +7,8 @@
     <ProjectGuid>{75266C67-878B-47EB-84E3-C83306FFF468}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogicTest</RootNamespace>
-    <AssemblyName>LogicTest</AssemblyName>
+    <RootNamespace>TheLiarAndTheTruthTeller</RootNamespace>
+    <AssemblyName>TheLiarAndTheTruthTeller</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

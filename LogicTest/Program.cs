@@ -32,7 +32,7 @@ namespace TheLiarAndTheTruthTeller
                 }
             };
 
-            EvaluateQuestion(new DoesYourDoorLeadToFreedom(), allConfigurations);
+            EvaluateQuestion(new DoesThisDoorLeadToFreedom(), allConfigurations);
 
             EvaluateQuestion(new WhatWillTheOtherGuardSay(), allConfigurations);
 
@@ -43,6 +43,7 @@ namespace TheLiarAndTheTruthTeller
 
         private static void EvaluateQuestion(Question question,List<Configuration> configurations)
         {
+            
             Console.WriteLine("QUESTION:" + question.ToString());
             Console.WriteLine();
 
@@ -54,11 +55,13 @@ namespace TheLiarAndTheTruthTeller
                 Console.WriteLine(configuration);
                 Console.WriteLine();
 
-                Console.WriteLine("Asking first guard: " + question.AskQuestion(configuration.guard1));
-                Console.WriteLine("Asking second guard: " + question.AskQuestion(configuration.guard2));
+                Console.WriteLine("Asking first guard: Answer is " + question.AskQuestion(configuration.guard1));
+                Console.WriteLine("Asking second guard: Answer is " + question.AskQuestion(configuration.guard2));
 
                 Console.WriteLine();
             }
+
+            Console.WriteLine("-------------------------------");
         }
 
     }

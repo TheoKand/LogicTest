@@ -1,5 +1,6 @@
-# LogicTest
-The Liar and the Truth Teller
+# The Liar and the Truth Teller
+
+<i>Logic test in C#</i>
 
 There are two guards and two doors. One door leads to freedom, and the other to death. One guard always lies, the other always tells the truth. They know which they are. They know where the two doors go. You do not know which guard is which or which door is which. You may ask one yes or no question to one guard. What do you ask to determine which door leads to freedom?
 
@@ -9,9 +10,9 @@ We must ask a question that will result in an answer which is conclusive regardl
 
 <b>SOLUTION</B>
 
-Point to any door and ask the guard in front of it: What will the other guard say if I ask him 'Does your door leed to freedom?'. This question will produce a conclusive answer in all configurations. If you always do the opposite of what the answer says (use the other door) you will always find the right door.
+Point to any door and ask the guard in front of it: What will the other guard say if I ask him 'Does your door lead to freedom?'. This question will produce a conclusive answer in all configurations. If you always do the opposite of what the answer says (use the other door) you will always find the right door.
 
-There are four possible configurations, and the answer we get (or it's opposite) must be the safe door in all cases:
+There are four possible configurations, and the answer we get (or it's opposite) must lead to the safe door in all cases:
 <ol><li>Ask the truth teller that guards the right door</li>
 <li>Ask the liar that guards the right door</li>
 <li>Ask the truth teller that guards the wrong door</li>
@@ -20,8 +21,10 @@ There are four possible configurations, and the answer we get (or it's opposite)
 
 <ul>
 <li>Run the console application for a visual representation of the results. Two questions are evaluated :
-<ol><li>Does your door leed to freedom? (no conclusive answer - wrong question)</li>
-<li>What will the other guard answer if I ask him 'Does your door leed to freedom?' (conclusive answer - doing the opposite will always lead to freedom)</li></ol>
+<ol><li>Does your door lead to freedom? (no conclusive answer - wrong question)</li>
+<li>What will the other guard answer if I ask him 'Does your door lead to freedom?' (conclusive answer - doing the opposite will always lead to freedom)</li></ol>
 </li>
 <li>The test suite contains unit tests that check if a question will provide a conclusive answer, and if following this answer (or it's opposite) will lead to freedom, in all possible configurations.</li>
+
+There are more correct answers than the one provided here. A correct answer will pass the 
 </ul>

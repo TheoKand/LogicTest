@@ -20,11 +20,11 @@ namespace TheLiarAndTheTruthTeller.Core
 
     }
 
-    public class DoesYourDoorLeadToFreedom : Question
+    public class DoesThisDoorLeadToFreedom : Question
     {
-        public DoesYourDoorLeadToFreedom()
+        public DoesThisDoorLeadToFreedom()
         {
-            this.Text = @"Does your door leed to freedom?";
+            this.Text = @"Does this door lead to freedom?";
         }
 
         public override string ToString()
@@ -66,7 +66,7 @@ namespace TheLiarAndTheTruthTeller.Core
     {
         public WhatWillTheOtherGuardSay()
         {
-            this.Text = @"What will the other guard say if I ask him 'Does your door leed to freedom?'";
+            this.Text = @"What will the other guard say if I ask him 'Does this door lead to freedom?'";
         }
 
         public override string ToString()

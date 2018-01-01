@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using TheLiarAndTheTruthTeller.Core;
 
-namespace TheLiarAndTheTruthTeller.UnitTests
+namespace TheLiarAndTheTruthTeller.Tests
 {
     [SetUpFixture]
     class Setup

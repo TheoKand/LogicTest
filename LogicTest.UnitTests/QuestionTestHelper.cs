@@ -1,15 +1,21 @@
 ﻿using System.Collections.Generic;
 using TheLiarAndTheTruthTeller.Core;
 
-namespace TheLiarAndTheTruthTeller.Core
+namespace TheLiarAndTheTruthTeller.Tests
 {
-    public class QuestionEvaluator
+    public class QuestionTestHelper
     {
+        private Question question;
+
+        public QuestionTestHelper(Question question)
+        {
+            this.question = question;
+        }
 
         /// <summary>
         /// Returns TRUE if this question returns a conclusive answer regardless of which guard answers.
         /// </summary>
-        public static bool QuestionHasConclusiveAnswer(Question question,List<Configuration> configurations)
+        public bool QuestionHasConclusiveAnswer(List<Configuration> configurations)
         {
 
             for (int i = 0; i < configurations.Count; i++)
@@ -25,7 +31,10 @@ namespace TheLiarAndTheTruthTeller.Core
             return true;
         }
 
-        public static bool AnswerAlwaysLeadsToFreedom(Question question, List<Configuration> configurations)
+        /// <summary>
+        /// Returns TRUE if the answer always leads to freedom, for all configurations
+        /// </summary>
+        public bool AnswerAlwaysLeadsToFreedom(List<Configuration> configurations)
         {
 
             for (int i = 0; i < configurations.Count; i++)
@@ -56,8 +65,13 @@ namespace TheLiarAndTheTruthTeller.Core
 
             return true;
         }
-
-        public static bool OppositeAnswerAlwaysLeadsToFreedom(Question question, List<Configuration> configurations)
+   
+        /// <summary>
+        /// Returns TRUE if the opposite answer always leads to freedom, for all configurations.
+        /// </summary>
+        /// <param name="configurations"></param>
+        /// <returns></returns>
+        public bool OppositeAnswerAlwaysLeadsToFreedom( List<Configuration> configurations)
         {
 
             for (int i = 0; i < configurations.Count; i++)

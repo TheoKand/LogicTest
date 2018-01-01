@@ -8,8 +8,8 @@
     <ProjectGuid>{BE318187-4D39-40AF-8E61-215CE5645925}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogicTest.UnitTests</RootNamespace>
-    <AssemblyName>LogicTest.UnitTests</AssemblyName>
+    <RootNamespace>TheLiarAndTheTruthTeller.Tests</RootNamespace>
+    <AssemblyName>TheLiarAndTheTruthTeller.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -47,9 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QuestionTestHelper.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="DoesYourDoorLeadToFreedom_UnitTests.cs" />
-    <Compile Include="WhatWillTheOtherGuardSay_UnitTests.cs" />
+    <Compile Include="QuestionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

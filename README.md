@@ -37,6 +37,6 @@ There are four possible configurations, and the answer we get (or it's opposite)
 </p>
 
 <p>
-There are more correct questions than the one provided here. A correct answer will provide a conclusive answer regardless of configuration and the answer (or the opposite) will always lead to freedom.
+There are more "correct" questions than the one provided here. A correct question will provide a conclusive answer regardless of configuration and the answer (or the opposite) will always lead to freedom.
   </p>
 

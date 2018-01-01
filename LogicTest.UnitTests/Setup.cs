@@ -1,8 +1,9 @@
 ﻿
 using NUnit.Framework;
 using System.Collections.Generic;
+using TheLiarAndTheTruthTeller.Core;
 
-namespace LogicTest.UnitTests
+namespace TheLiarAndTheTruthTeller.UnitTests
 {
     [SetUpFixture]
     class Setup

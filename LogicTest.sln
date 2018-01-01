@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicTest", "LogicTest\LogicTest.csproj", "{75266C67-878B-47EB-84E3-C83306FFF468}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLiarAndTheTruthTeller", "LogicTest\TheLiarAndTheTruthTeller.csproj", "{75266C67-878B-47EB-84E3-C83306FFF468}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicTest.UnitTests", "LogicTest.UnitTests\LogicTest.UnitTests.csproj", "{BE318187-4D39-40AF-8E61-215CE5645925}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLiarAndTheTruthTeller.UnitTests", "LogicTest.UnitTests\TheLiarAndTheTruthTeller.UnitTests.csproj", "{BE318187-4D39-40AF-8E61-215CE5645925}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B1918F62-2C59-400D-8BB5-D558D4C6C89D}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLiarAndTheTruthTeller.Core", "TheLiarAndTheTruthTeller.Core\TheLiarAndTheTruthTeller.Core.csproj", "{B24D51C3-C8DF-4191-9E25-4E4C95B3C950}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +30,10 @@ Global
 		{BE318187-4D39-40AF-8E61-215CE5645925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE318187-4D39-40AF-8E61-215CE5645925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE318187-4D39-40AF-8E61-215CE5645925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24D51C3-C8DF-4191-9E25-4E4C95B3C950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24D51C3-C8DF-4191-9E25-4E4C95B3C950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24D51C3-C8DF-4191-9E25-4E4C95B3C950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24D51C3-C8DF-4191-9E25-4E4C95B3C950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

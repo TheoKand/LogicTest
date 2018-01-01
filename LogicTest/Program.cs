@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TheLiarAndTheTruthTeller.Core;
 
-namespace LogicTest
+namespace TheLiarAndTheTruthTeller
 {
     class Program
     {
@@ -34,30 +32,30 @@ namespace LogicTest
                 }
             };
 
-            RunScenario(new WillYouGoThroughThisDoor(), allConfigurations);
+            EvaluateQuestion(new DoesYourDoorLeadToFreedom(), allConfigurations);
 
-            RunScenario(new WhatWillTheOtherOneAnswer(), allConfigurations);
+            EvaluateQuestion(new WhatWillTheOtherGuardSay(), allConfigurations);
 
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
 
         }
 
-        private static void RunScenario(Question question,List<Configuration> scenarios)
+        private static void EvaluateQuestion(Question question,List<Configuration> configurations)
         {
             Console.WriteLine("QUESTION:" + question.ToString());
             Console.WriteLine();
 
-            for (int i = 0; i < scenarios.Count; i++)
+            for (int i = 0; i < configurations.Count; i++)
             {
-                Configuration scenario = scenarios[i];
+                Configuration configuration = configurations[i];
 
-                Console.WriteLine($"Scenario {i + 1}:");
-                Console.WriteLine(scenario);
+                Console.WriteLine($"Configuration {i + 1}:");
+                Console.WriteLine(configuration);
                 Console.WriteLine();
 
-                Console.WriteLine("Asking first guard: " + question.AskQuestion(scenario.guard1));
-                Console.WriteLine("Asking second guard: " + question.AskQuestion(scenario.guard2));
+                Console.WriteLine("Asking first guard: " + question.AskQuestion(configuration.guard1));
+                Console.WriteLine("Asking second guard: " + question.AskQuestion(configuration.guard2));
 
                 Console.WriteLine();
             }

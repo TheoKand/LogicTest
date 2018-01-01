@@ -48,21 +48,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Setup.cs" />
-    <Compile Include="WillYouGoThroughThisDoor_UnitTests.cs" />
-    <Compile Include="WhatWillTheOtherOneAnswer_UnitTests.cs" />
+    <Compile Include="DoesYourDoorLeadToFreedom_UnitTests.cs" />
+    <Compile Include="WhatWillTheOtherGuardSay_UnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LogicTest\LogicTest.csproj">
-      <Project>{75266c67-878b-47eb-84e3-c83306fff468}</Project>
-      <Name>LogicTest</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheLiarAndTheTruthTeller.Core\TheLiarAndTheTruthTeller.Core.csproj">
+      <Project>{b24d51c3-c8df-4191-9e25-4e4c95b3c950}</Project>
+      <Name>TheLiarAndTheTruthTeller.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

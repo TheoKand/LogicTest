@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using TheLiarAndTheTruthTeller.Core;
 
-namespace LogicTest
+namespace TheLiarAndTheTruthTeller.Core
 {
-    public class QuestionRunner
+    public class QuestionEvaluator
     {
 
         /// <summary>
         /// Returns TRUE if this question returns a conclusive answer regardless of which guard answers.
         /// </summary>
-        public static bool QuestionResultsInConclusiveAnswer(Question question,List<Configuration> configurations)
+        public static bool QuestionHasConclusiveAnswer(Question question,List<Configuration> configurations)
         {
 
             for (int i = 0; i < configurations.Count; i++)

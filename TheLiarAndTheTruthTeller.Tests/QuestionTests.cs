@@ -13,9 +13,9 @@ namespace TheLiarAndTheTruthTeller.Tests
         {
             QuestionTestHelper helper = new QuestionTestHelper(new DoesThisDoorLeadToFreedom());
 
-            Assert.IsTrue(helper.QuestionHasConclusiveAnswer(Setup.allConfigurations));
+            Assert.IsTrue(helper.QuestionHasConclusiveAnswer());
 
-            Assert.That(helper.AnswerAlwaysLeadsToFreedom(Setup.allConfigurations) || helper.OppositeAnswerAlwaysLeadsToFreedom(Setup.allConfigurations));
+            Assert.That(helper.AnswerAlwaysLeadsToFreedom() || helper.OppositeAnswerAlwaysLeadsToFreedom());
         }
 
         [Test]
@@ -23,9 +23,9 @@ namespace TheLiarAndTheTruthTeller.Tests
         {
             QuestionTestHelper helper = new QuestionTestHelper(new WhatWillTheOtherGuardSay());
 
-            Assert.IsTrue(helper.QuestionHasConclusiveAnswer(Setup.allConfigurations));
+            Assert.IsTrue(helper.QuestionHasConclusiveAnswer());
 
-            Assert.That(helper.AnswerAlwaysLeadsToFreedom(Setup.allConfigurations) || helper.OppositeAnswerAlwaysLeadsToFreedom(Setup.allConfigurations));
+            Assert.That(helper.AnswerAlwaysLeadsToFreedom() || helper.OppositeAnswerAlwaysLeadsToFreedom());
         }
 
     }

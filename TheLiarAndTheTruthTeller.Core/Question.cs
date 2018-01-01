@@ -16,6 +16,10 @@ namespace TheLiarAndTheTruthTeller.Core
 
         public string Text { get; protected set; }
 
+
+        /// <summary>
+        /// The answers must be implemented in this method
+        /// </summary>
         public abstract AnswerEnum AskQuestion(Guard toThisGuard);
 
     }

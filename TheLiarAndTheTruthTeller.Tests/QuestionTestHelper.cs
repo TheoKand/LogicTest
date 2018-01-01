@@ -15,12 +15,12 @@ namespace TheLiarAndTheTruthTeller.Tests
         /// <summary>
         /// Returns TRUE if this question returns a conclusive answer regardless of which guard answers.
         /// </summary>
-        public bool QuestionHasConclusiveAnswer(List<Configuration> configurations)
+        public bool QuestionHasConclusiveAnswer()
         {
 
-            for (int i = 0; i < configurations.Count; i++)
+            for (int i = 0; i < Configuration.AllPossible.Count; i++)
             {
-                Configuration configuration = configurations[i];
+                Configuration configuration = Configuration.AllPossible[i];
 
                 var firstGuardAnswer= question.AskQuestion(configuration.guard1);
                 var secondGuardAnswer = question.AskQuestion(configuration.guard2);
@@ -34,12 +34,12 @@ namespace TheLiarAndTheTruthTeller.Tests
         /// <summary>
         /// Returns TRUE if the answer always leads to freedom, for all configurations
         /// </summary>
-        public bool AnswerAlwaysLeadsToFreedom(List<Configuration> configurations)
+        public bool AnswerAlwaysLeadsToFreedom()
         {
 
-            for (int i = 0; i < configurations.Count; i++)
+            for (int i = 0; i < Configuration.AllPossible.Count; i++)
             {
-                Configuration configuration = configurations[i];
+                Configuration configuration = Configuration.AllPossible[i];
 
                 var firstGuardAnswer = question.AskQuestion(configuration.guard1);
                 if (configuration.guard1.Door.LeadsToFreedom && firstGuardAnswer!= Question.AnswerEnum.Yes)
@@ -71,12 +71,12 @@ namespace TheLiarAndTheTruthTeller.Tests
         /// </summary>
         /// <param name="configurations"></param>
         /// <returns></returns>
-        public bool OppositeAnswerAlwaysLeadsToFreedom( List<Configuration> configurations)
+        public bool OppositeAnswerAlwaysLeadsToFreedom( )
         {
 
-            for (int i = 0; i < configurations.Count; i++)
+            for (int i = 0; i < Configuration.AllPossible.Count; i++)
             {
-                Configuration configuration = configurations[i];
+                Configuration configuration = Configuration.AllPossible[i];
 
                 var firstGuardAnswer = question.AskQuestion(configuration.guard1);
                 if (configuration.guard1.Door.LeadsToFreedom && firstGuardAnswer != Question.AnswerEnum.No)
@@ -97,7 +97,6 @@ namespace TheLiarAndTheTruthTeller.Tests
                 {
                     return false;
                 }
-
 
             }
 

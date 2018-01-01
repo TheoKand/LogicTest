@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="QuestionTestHelper.cs" />
-    <Compile Include="Setup.cs" />
     <Compile Include="QuestionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

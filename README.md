@@ -4,7 +4,7 @@
 
 <i>I was asked this logic question verbally in a 2nd stage interview for a permanent .NET Developer with a company in the City of London, in November 2017. The source code implementation in C# is my original work.</i>
 
-There are two guards and two doors. One door leads to freedom, and the other to death. One guard always lies, the other always tells the truth. They know which they are. They know where the two doors go. You do not know which guard is which or which door is which. You may ask one yes or no question to one guard. What do you ask to determine which door leads to freedom?
+There are two guards and two doors. One door leads to freedom, and the other to death. One guard always lies, the other always tells the truth. They know where the two doors go. You do not know which guard is which or which door is which. You may ask one yes or no question to one guard. What do you ask to determine which door leads to freedom?
 
 <p>
 <details>

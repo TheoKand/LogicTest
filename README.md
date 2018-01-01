@@ -6,6 +6,7 @@
 
 There are two guards and two doors. One door leads to freedom, and the other to death. One guard always lies, the other always tells the truth. They know which they are. They know where the two doors go. You do not know which guard is which or which door is which. You may ask one yes or no question to one guard. What do you ask to determine which door leads to freedom?
 
+<p>
 <details>
     <summary>SHOW SOLUTION</summary>
     
@@ -32,8 +33,9 @@ There are four possible configurations, and the answer we get (or it's opposite)
 
 
 
-
 </details>
+</p>
+
 <p>
 There are more correct questions than the one provided here. A correct answer will provide a conclusive answer regardless of configuration and the answer (or the opposite) will always lead to freedom.
   </p>

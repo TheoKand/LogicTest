@@ -41,7 +41,7 @@ namespace TheLiarAndTheTruthTeller.Core
 
             if (askThisGuard.Door.LeadsToFreedom)
             {
-                if (askThisGuard.TellsTruth)
+                if (askThisGuard.IsTruthTeller)
                 {
                     return AnswerEnum.Yes;
 
@@ -53,7 +53,7 @@ namespace TheLiarAndTheTruthTeller.Core
             }
             else //if (askThisGuard.Door.LeadsToDeath) 
             {
-                if (askThisGuard.TellsTruth)
+                if (askThisGuard.IsTruthTeller)
                 {
                     return AnswerEnum.No;
                 }
@@ -83,7 +83,7 @@ namespace TheLiarAndTheTruthTeller.Core
 
             if (askThisGuard.Door.LeadsToFreedom)
             {
-                if (askThisGuard.TellsTruth)
+                if (askThisGuard.IsTruthTeller)
                 {
                     return AnswerEnum.No;
 
@@ -95,7 +95,7 @@ namespace TheLiarAndTheTruthTeller.Core
             }
             else //if (askThisGuard.Door.LeadsToDeath) 
             {
-                if (askThisGuard.TellsTruth)
+                if (askThisGuard.IsTruthTeller)
                 {
                     return AnswerEnum.Yes;
                 }

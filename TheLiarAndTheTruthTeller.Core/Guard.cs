@@ -8,12 +8,12 @@ namespace TheLiarAndTheTruthTeller.Core
 {
     public class Guard
     {
-        public bool TellsTruth { get; set; }
-        public bool TellsLies
+        public bool IsTruthTeller { get; set; }
+        public bool IsLiar
         {
             get
             {
-                return !TellsTruth;
+                return !IsTruthTeller;
             }
         }
 
@@ -21,7 +21,7 @@ namespace TheLiarAndTheTruthTeller.Core
 
         public override string ToString()
         {
-            return "guards " + Door.ToString() + ", tells " + (TellsTruth ? "THE TRUTH" : "LIES");
+            return "guards " + Door.ToString() + ", tells " + (IsTruthTeller ? "THE TRUTH" : "LIES");
         }
     }
 }

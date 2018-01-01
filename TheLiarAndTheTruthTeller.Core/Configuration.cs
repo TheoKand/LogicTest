@@ -24,23 +24,23 @@ namespace TheLiarAndTheTruthTeller.Core
             {
                 new Configuration()
                 {
-                    guard1 = new Guard() { TellsTruth = true, Door = new Door() { LeadsToFreedom = true } },
-                    guard2 = new Guard() { TellsTruth = false, Door = new Door() { LeadsToFreedom = false } }
+                    guard1 = new Guard() { IsTruthTeller = true, Door = new Door() { LeadsToFreedom = true } },
+                    guard2 = new Guard() { IsTruthTeller = false, Door = new Door() { LeadsToFreedom = false } }
                 },
                 new Configuration()
                 {
-                    guard1 = new Guard() { TellsTruth = false, Door = new Door() { LeadsToFreedom = true } },
-                    guard2 = new Guard() { TellsTruth = true, Door = new Door() { LeadsToFreedom = false } }
+                    guard1 = new Guard() { IsTruthTeller = false, Door = new Door() { LeadsToFreedom = true } },
+                    guard2 = new Guard() { IsTruthTeller = true, Door = new Door() { LeadsToFreedom = false } }
                 },
                 new Configuration()
                 {
-                    guard1 = new Guard() { TellsTruth = true, Door = new Door() { LeadsToFreedom = false } },
-                    guard2 = new Guard() { TellsTruth = false, Door = new Door() { LeadsToFreedom = true } }
+                    guard1 = new Guard() { IsTruthTeller = true, Door = new Door() { LeadsToFreedom = false } },
+                    guard2 = new Guard() { IsTruthTeller = false, Door = new Door() { LeadsToFreedom = true } }
                 },
                 new Configuration()
                 {
-                    guard1 = new Guard() { TellsTruth = false, Door = new Door() { LeadsToFreedom = false } },
-                    guard2 = new Guard() { TellsTruth = true, Door = new Door() { LeadsToFreedom = true } }
+                    guard1 = new Guard() { IsTruthTeller = false, Door = new Door() { LeadsToFreedom = false } },
+                    guard2 = new Guard() { IsTruthTeller = true, Door = new Door() { LeadsToFreedom = true } }
                 }
             };
 

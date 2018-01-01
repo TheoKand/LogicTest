@@ -25,6 +25,6 @@ There are four possible configurations, and the answer we get (or it's opposite)
 <li>What will the other guard answer if I ask him 'Does your door lead to freedom?' (conclusive answer - doing the opposite will always lead to freedom)</li></ol>
 </li>
 <li>The test suite contains unit tests that check if a question will provide a conclusive answer, and if following this answer (or it's opposite) will lead to freedom, in all possible configurations.</li>
-
-There are more correct answers than the one provided here. A correct answer will pass the 
 </ul>
+
+There are more correct questions than the one provided here. A correct answer will provide a conclusive answer regardless of configuration and the answer (or the opposite) will always lead to freedom.

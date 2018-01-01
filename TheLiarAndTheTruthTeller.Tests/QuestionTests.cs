@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
 using TheLiarAndTheTruthTeller.Core;
+using TheLiarAndTheTruthTeller.Core.Questions;
 
 namespace TheLiarAndTheTruthTeller.Tests
 {

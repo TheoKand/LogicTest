@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using TheLiarAndTheTruthTeller.Core;
+using TheLiarAndTheTruthTeller.Core.Questions;
 
 namespace TheLiarAndTheTruthTeller
 {

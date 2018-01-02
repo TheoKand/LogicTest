@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using TheLiarAndTheTruthTeller.Core;
 using TheLiarAndTheTruthTeller.Core.Questions;
 
@@ -14,7 +14,8 @@ namespace TheLiarAndTheTruthTeller.Tests
         }
 
         /// <summary>
-        /// Returns TRUE if this question returns a conclusive answer regardless of which guard answers.
+        /// Returns TRUE if this question returns a conclusive answer regardless of which guard answers. If they answer the same for any
+        /// configuration, it's not conclusive. The reason is that we don't know who is the truth teller.
         /// </summary>
         public bool QuestionHasConclusiveAnswer()
         {
@@ -37,72 +38,52 @@ namespace TheLiarAndTheTruthTeller.Tests
         /// </summary>
         public bool AnswerAlwaysLeadsToFreedom()
         {
-
-            for (int i = 0; i < Configuration.AllPossible.Count; i++)
-            {
-                Configuration configuration = Configuration.AllPossible[i];
-
-                var firstGuardAnswer = question.AskQuestion(configuration.guard1);
-                if (configuration.guard1.Door.LeadsToFreedom && firstGuardAnswer!= Question.AnswerEnum.Yes)
-                {
-                    return false;
-                } else if (configuration.guard1.Door.LeadsToDeath && firstGuardAnswer != Question.AnswerEnum.No)
-                {
-                    return false;
-                }
-
-                var secondGuardAnswer = question.AskQuestion(configuration.guard2);
-                if (configuration.guard2.Door.LeadsToFreedom && secondGuardAnswer != Question.AnswerEnum.Yes)
-                {
-                    return false;
-                }
-                else if (configuration.guard2.Door.LeadsToDeath && secondGuardAnswer != Question.AnswerEnum.No)
-                {
-                    return false;
-                }
-
-
-            }
-
-            return true;
+            List<char> questionResults = GetQuestionResults();
+            return questionResults.IndexOf('D') == -1;
         }
    
         /// <summary>
-        /// Returns TRUE if the opposite answer always leads to freedom, for all configurations.
+        /// Returns TRUE if the answer always leads to death, which means doing the opposite will always lead to freedom
         /// </summary>
         /// <param name="configurations"></param>
         /// <returns></returns>
-        public bool OppositeAnswerAlwaysLeadsToFreedom( )
+        public bool AnswerAlwaysLeadsToDeath( )
         {
 
-            for (int i = 0; i < Configuration.AllPossible.Count; i++)
+            List<char> questionResults = GetQuestionResults();
+            return questionResults.IndexOf('F') == -1;
+        }
+
+        private List<char> GetQuestionResults()
+        {
+            List<char> results = new List<char>();
+
+            foreach (Configuration configuration in Configuration.AllPossible)
             {
-                Configuration configuration = Configuration.AllPossible[i];
 
                 var firstGuardAnswer = question.AskQuestion(configuration.guard1);
-                if (configuration.guard1.Door.LeadsToFreedom && firstGuardAnswer != Question.AnswerEnum.No)
+                if (configuration.guard1.Door.LeadsToFreedom)
                 {
-                    return false;
+                    results.Add(firstGuardAnswer == Question.AnswerEnum.Yes ? 'F' : 'D');
                 }
-                else if (configuration.guard1.Door.LeadsToDeath && firstGuardAnswer != Question.AnswerEnum.Yes)
+                else
                 {
-                    return false;
+                    results.Add(firstGuardAnswer == Question.AnswerEnum.Yes ? 'D' : 'F');
                 }
 
                 var secondGuardAnswer = question.AskQuestion(configuration.guard2);
-                if (configuration.guard2.Door.LeadsToFreedom && secondGuardAnswer != Question.AnswerEnum.No)
+                if (configuration.guard2.Door.LeadsToFreedom)
                 {
-                    return false;
+                    results.Add(secondGuardAnswer == Question.AnswerEnum.Yes ? 'F' : 'D');
                 }
-                else if (configuration.guard2.Door.LeadsToDeath && secondGuardAnswer != Question.AnswerEnum.Yes)
+                else
                 {
-                    return false;
+                    results.Add(secondGuardAnswer == Question.AnswerEnum.Yes ? 'D' : 'F');
                 }
-
             }
-
-            return true;
+            return results;
         }
+
 
     }
 }

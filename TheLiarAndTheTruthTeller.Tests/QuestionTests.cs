@@ -16,7 +16,7 @@ namespace TheLiarAndTheTruthTeller.Tests
 
             Assert.IsTrue(helper.QuestionHasConclusiveAnswer());
 
-            Assert.That(helper.AnswerAlwaysLeadsToFreedom() || helper.OppositeAnswerAlwaysLeadsToFreedom());
+            Assert.That(helper.AnswerAlwaysLeadsToFreedom() || helper.AnswerAlwaysLeadsToDeath());
         }
 
         [Test]
@@ -26,7 +26,7 @@ namespace TheLiarAndTheTruthTeller.Tests
 
             Assert.IsTrue(helper.QuestionHasConclusiveAnswer());
 
-            Assert.That(helper.AnswerAlwaysLeadsToFreedom() || helper.OppositeAnswerAlwaysLeadsToFreedom());
+            Assert.That(helper.AnswerAlwaysLeadsToFreedom() || helper.AnswerAlwaysLeadsToDeath());
         }
 
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheLiarAndTheTruthTeller.Core
 {
-    public class Door
+    public struct Door
     {
         public bool LeadsToFreedom { get; set; }
 

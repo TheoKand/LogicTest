@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TheLiarAndTheTruthTeller.Core
 {
 
-    public class Configuration
+    public struct Configuration
     {
         public Guard guard1;
         public Guard guard2;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheLiarAndTheTruthTeller.Core
 {
-    public class Guard
+    public struct Guard
     {
         public bool IsTruthTeller { get; set; }
         public bool IsLiar

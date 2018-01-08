@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheLiarAndTheTruthTeller.Core
+namespace TheLiarAndTheTruthTeller.Model
 {
 
     public struct Configuration

@@ -58,9 +58,9 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TheLiarAndTheTruthTeller.Core\TheLiarAndTheTruthTeller.Core.csproj">
+    <ProjectReference Include="..\TheLiarAndTheTruthTeller.Model\TheLiarAndTheTruthTeller.Model.csproj">
       <Project>{b24d51c3-c8df-4191-9e25-4e4c95b3c950}</Project>
-      <Name>TheLiarAndTheTruthTeller.Core</Name>
+      <Name>TheLiarAndTheTruthTeller.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

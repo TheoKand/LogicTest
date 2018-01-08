@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheLiarAndTheTruthTeller.Core.Questions
+namespace TheLiarAndTheTruthTeller.Model.Questions
 {
     public abstract class Question
     {

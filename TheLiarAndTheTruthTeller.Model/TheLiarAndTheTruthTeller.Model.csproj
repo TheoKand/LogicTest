@@ -7,8 +7,8 @@
     <ProjectGuid>{B24D51C3-C8DF-4191-9E25-4E4C95B3C950}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TheLiarAndTheTruthTeller.Core</RootNamespace>
-    <AssemblyName>TheLiarAndTheTruthTeller.Core</AssemblyName>
+    <RootNamespace>TheLiarAndTheTruthTeller.Model</RootNamespace>
+    <AssemblyName>TheLiarAndTheTruthTeller.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

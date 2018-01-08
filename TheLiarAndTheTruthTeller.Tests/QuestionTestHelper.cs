@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using TheLiarAndTheTruthTeller.Core;
-using TheLiarAndTheTruthTeller.Core.Questions;
+using TheLiarAndTheTruthTeller.Model;
+using TheLiarAndTheTruthTeller.Model.Questions;
 
 namespace TheLiarAndTheTruthTeller.Tests
 {

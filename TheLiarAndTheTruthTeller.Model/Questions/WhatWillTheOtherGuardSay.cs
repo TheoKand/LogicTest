@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheLiarAndTheTruthTeller.Core.Questions
+namespace TheLiarAndTheTruthTeller.Model.Questions
 {
-    public class DoesThisDoorLeadToFreedom : Question
+    public class WhatWillTheOtherGuardSay : Question
     {
-        public DoesThisDoorLeadToFreedom()
+        public WhatWillTheOtherGuardSay()
         {
-            this.Text = @"Does this door lead to freedom?";
+            this.Text = @"What will the other guard say if I ask him 'Does this door lead to freedom?'";
         }
 
         public override string ToString()
@@ -25,7 +25,7 @@ namespace TheLiarAndTheTruthTeller.Core.Questions
             {
                 if (askThisGuard.IsTruthTeller)
                 {
-                    return AnswerEnum.Yes;
+                    return AnswerEnum.No;
 
                 }
                 else //if (askThisGuard.TellsLies)
@@ -37,7 +37,7 @@ namespace TheLiarAndTheTruthTeller.Core.Questions
             {
                 if (askThisGuard.IsTruthTeller)
                 {
-                    return AnswerEnum.No;
+                    return AnswerEnum.Yes;
                 }
                 else // if (askThisGuard.TellsLies)
                 {
